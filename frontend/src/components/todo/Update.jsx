@@ -20,7 +20,7 @@ const {name,value}=e.target;
 setInputs({...Inputs,[name]:value})
   };
   const submit=async()=>{
-    await axios.put(`http:localhost:1000/api/v2/updateTask/${update._id}`,Inputs).then((response)=>{
+    await axios.put(`http://localhost:1000/api/v2/updateTask/${update._id}`,Inputs).then((response)=>{
      toast.success("Your Task is Updated Successfully")
     // toast.success(response.data.message);
     });
